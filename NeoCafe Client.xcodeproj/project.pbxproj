@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		907D88F3130A149FF0D6E82F /* Pods_NeoCafe_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E7E7C621A8A7084C0DF540 /* Pods_NeoCafe_Client.framework */; };
 		DD5C91762B6AA4DA00566FA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C91752B6AA4DA00566FA8 /* AppDelegate.swift */; };
 		DD5C91782B6AA4DA00566FA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C91772B6AA4DA00566FA8 /* SceneDelegate.swift */; };
 		DD5C917A2B6AA4DA00566FA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C91792B6AA4DA00566FA8 /* ViewController.swift */; };
 		DD5C917F2B6AA4DC00566FA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5C917E2B6AA4DC00566FA8 /* Assets.xcassets */; };
 		DD5C91822B6AA4DC00566FA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5C91802B6AA4DC00566FA8 /* LaunchScreen.storyboard */; };
+		DD5C924C2B70284800566FA8 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C924B2B70284800566FA8 /* RegisterVC.swift */; };
+		DD5C924E2B70285E00566FA8 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C924D2B70285E00566FA8 /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44BDA3E15DFDF79D358F7E61 /* Pods-NeoCafe Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoCafe Client.release.xcconfig"; path = "Target Support Files/Pods-NeoCafe Client/Pods-NeoCafe Client.release.xcconfig"; sourceTree = "<group>"; };
+		D3E7E7C621A8A7084C0DF540 /* Pods_NeoCafe_Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeoCafe_Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5C91722B6AA4DA00566FA8 /* NeoCafe Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NeoCafe Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5C91752B6AA4DA00566FA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD5C91772B6AA4DA00566FA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		DD5C917E2B6AA4DC00566FA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD5C91812B6AA4DC00566FA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD5C91832B6AA4DC00566FA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD5C924B2B70284800566FA8 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		DD5C924D2B70285E00566FA8 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		F8C7B563F9A83B58C50643E1 /* Pods-NeoCafe Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeoCafe Client.debug.xcconfig"; path = "Target Support Files/Pods-NeoCafe Client/Pods-NeoCafe Client.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				907D88F3130A149FF0D6E82F /* Pods_NeoCafe_Client.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85BE3D9EEBA94C6637CE9EF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3E7E7C621A8A7084C0DF540 /* Pods_NeoCafe_Client.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D1201803F4D0E593B99BC34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8C7B563F9A83B58C50643E1 /* Pods-NeoCafe Client.debug.xcconfig */,
+				44BDA3E15DFDF79D358F7E61 /* Pods-NeoCafe Client.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DD5C91692B6AA4DA00566FA8 = {
 			isa = PBXGroup;
 			children = (
 				DD5C91742B6AA4DA00566FA8 /* NeoCafe Client */,
 				DD5C91732B6AA4DA00566FA8 /* Products */,
+				8D1201803F4D0E593B99BC34 /* Pods */,
+				85BE3D9EEBA94C6637CE9EF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +82,32 @@
 		DD5C91742B6AA4DA00566FA8 /* NeoCafe Client */ = {
 			isa = PBXGroup;
 			children = (
-				DD5C91752B6AA4DA00566FA8 /* AppDelegate.swift */,
-				DD5C91772B6AA4DA00566FA8 /* SceneDelegate.swift */,
-				DD5C91792B6AA4DA00566FA8 /* ViewController.swift */,
-				DD5C917E2B6AA4DC00566FA8 /* Assets.xcassets */,
-				DD5C91802B6AA4DC00566FA8 /* LaunchScreen.storyboard */,
 				DD5C91832B6AA4DC00566FA8 /* Info.plist */,
+				DD5C91792B6AA4DA00566FA8 /* ViewController.swift */,
+				DD5C924A2B70282D00566FA8 /* Register */,
+				DD5C92492B6D4B6000566FA8 /* Supporting */,
 			);
 			path = "NeoCafe Client";
+			sourceTree = "<group>";
+		};
+		DD5C92492B6D4B6000566FA8 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				DD5C917E2B6AA4DC00566FA8 /* Assets.xcassets */,
+				DD5C91802B6AA4DC00566FA8 /* LaunchScreen.storyboard */,
+				DD5C91772B6AA4DA00566FA8 /* SceneDelegate.swift */,
+				DD5C91752B6AA4DA00566FA8 /* AppDelegate.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		DD5C924A2B70282D00566FA8 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				DD5C924B2B70284800566FA8 /* RegisterVC.swift */,
+				DD5C924D2B70285E00566FA8 /* RegisterView.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +117,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD5C91862B6AA4DC00566FA8 /* Build configuration list for PBXNativeTarget "NeoCafe Client" */;
 			buildPhases = (
+				5E41D8B4B01CB758B8343EAC /* [CP] Check Pods Manifest.lock */,
 				DD5C916E2B6AA4DA00566FA8 /* Sources */,
 				DD5C916F2B6AA4DA00566FA8 /* Frameworks */,
 				DD5C91702B6AA4DA00566FA8 /* Resources */,
+				E2F624BB2B3F48DCC9ADEFD7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,12 +177,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5E41D8B4B01CB758B8343EAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NeoCafe Client-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2F624BB2B3F48DCC9ADEFD7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeoCafe Client/Pods-NeoCafe Client-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeoCafe Client/Pods-NeoCafe Client-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeoCafe Client/Pods-NeoCafe Client-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD5C916E2B6AA4DA00566FA8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DD5C917A2B6AA4DA00566FA8 /* ViewController.swift in Sources */,
+				DD5C924E2B70285E00566FA8 /* RegisterView.swift in Sources */,
+				DD5C924C2B70284800566FA8 /* RegisterVC.swift in Sources */,
 				DD5C91762B6AA4DA00566FA8 /* AppDelegate.swift in Sources */,
 				DD5C91782B6AA4DA00566FA8 /* SceneDelegate.swift in Sources */,
 			);
@@ -191,7 +283,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -254,7 +346,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -275,6 +367,7 @@
 		};
 		DD5C91872B6AA4DC00566FA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8C7B563F9A83B58C50643E1 /* Pods-NeoCafe Client.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +395,7 @@
 		};
 		DD5C91882B6AA4DC00566FA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44BDA3E15DFDF79D358F7E61 /* Pods-NeoCafe Client.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

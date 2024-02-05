@@ -9,12 +9,17 @@ import UIKit
 
 class RegisterVC: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    lazy var registerView = RegisterView()
+    
+    override func loadView() {
+        view = registerView
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .white
+
+    }
 
     /*
     // MARK: - Navigation

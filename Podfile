@@ -7,6 +7,5 @@ target 'NeoCafe Client' do
 
   # Pods for NeoCafe Client
 pod 'SnapKit'
-pod 'SkeletonView'
 
 end

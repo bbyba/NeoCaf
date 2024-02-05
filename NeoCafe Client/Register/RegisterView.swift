@@ -49,8 +49,18 @@ class RegisterView: UIView {
         return textField
     }()
     
+    lazy var nameTextField: CustomTextField = {
+        let textField = CustomTextField(iconName: "profile", customPlaceholder: "Иван")
+        return textField
+    }()
+    
     lazy var emailTextFieldReg: CustomTextField = {
-        let textField = CustomTextField(iconName: "email", customPlaceholder: "example@email.com")
+        let textField = CustomTextField(iconName: "at", customPlaceholder: "example@email.com")
+        return textField
+    }()
+    
+    lazy var birthdayTextfield: CustomTextField = {
+        let textField = CustomTextField(iconName: "calendar", customPlaceholder: "01.01.1999")
         return textField
     }()
     
@@ -64,6 +74,7 @@ class RegisterView: UIView {
         super.init(frame: frame)
         addSubviews()
         setupConstraints()
+        segmentedControl.addTarget(self, action: #selector(segmentedControlValueChanged), for: .valueChanged)
     }
     
     func addSubviews(){
@@ -74,11 +85,9 @@ class RegisterView: UIView {
         addSubview(textFieldStack)
         textFieldStack.addArrangedSubview(emailTextField)
         addSubview(button)
-
     }
     
     func setupConstraints(){
-        let commonHeight: CGFloat = 48
         
         headerSection.snp.makeConstraints { make in
             make.top.equalToSuperview()
@@ -112,19 +121,30 @@ class RegisterView: UIView {
             make.centerX.equalToSuperview()
             make.width.equalTo(346)
         }
-        
-        emailTextField.snp.makeConstraints { make in
-            make.height.equalTo(commonHeight)
-        }
-        
+              
         button.snp.makeConstraints { make in
             make.top.equalTo(textFieldStack.snp.bottom).offset(56)
             make.centerX.equalToSuperview()
             make.width.equalTo(346)
-            make.height.equalTo(commonHeight)
+            make.height.equalTo(48)
         }
     }
     
+    @objc func segmentedControlValueChanged() {
+        let allTextFields = [emailTextField, nameTextField, emailTextFieldReg, birthdayTextfield]
+        allTextFields.forEach { textFieldStack.removeArrangedSubview($0); $0.removeFromSuperview() }
+        
+        if segmentedControl.selectedSegmentIndex == 0 {
+            // Login
+            textFieldStack.addArrangedSubview(emailTextField)
+        } else {
+            // Registration
+            textFieldStack.addArrangedSubview(nameTextField)
+            textFieldStack.addArrangedSubview(emailTextFieldReg)
+            textFieldStack.addArrangedSubview(birthdayTextfield)
+        }
+    }
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

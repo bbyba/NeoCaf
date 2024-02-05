@@ -36,6 +36,10 @@ class CustomTextField: UITextField {
             iconImageView.frame = CGRect(x: 10, y: 0, width: 20, height: bounds.height)
         }
     }
+    
+    override var intrinsicContentSize: CGSize {
+        return CGSize(width: UIView.noIntrinsicMetric, height: 48)
+    }
 
     private func setupTextField() {
         self.autocapitalizationType = .none
